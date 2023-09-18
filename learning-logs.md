@@ -1,6 +1,6 @@
-layout: page
-title: "learning-logs"
-permalink: /learning-logs
+layout: page  
+title: "learning-logs"  
+permalink: /learning-logs/  
 
 
 "C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchLinuxEngine
