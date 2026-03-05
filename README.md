@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+# 丁伟东的博客
 
-You can use the [editor on GitHub](https://github.com/Weydon-Ding/Weydon-Ding.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+个人技术博客，用于分享技术思考、学习心得和项目经验。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 访问地址
 
-### Markdown
+[https://weydon-ding.github.io](https://weydon-ding.github.io)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 目录结构
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+├── _layouts/         # 布局文件
+│   └── post.html     # 文章页面布局
+├── _posts/           # 文章目录
+├── assets/           # 静态资源
+│   └── css/          # 样式文件
+│       └── style.css # 主样式文件
+├── _config.yml       # 配置文件
+├── index.md          # 主页
+├── about.md          # 关于页面
+├── AGENTS.md         # AI 维护指南
+└── README.md         # 项目说明
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## 如何写文章
 
-### Jekyll Themes
+1. 在 `_posts/` 目录下创建新文件
+2. 文件名格式：`年-月-日-标题.md`（例如：`2024-01-01-hello-world.md`）
+3. 文件头部添加 YAML front matter：
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Weydon-Ding/Weydon-Ding.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```yaml
+---
+layout: post
+title: "文章标题"
+date: 2024-01-01
+---
+```
 
-### Support or Contact
+4. 下方添加 Markdown 格式的文章内容
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## 技术栈
+
+- **平台**：GitHub Pages
+- **框架**：Jekyll
+- **主题**：jekyll-theme-minimal
+- **评论系统**：Giscus（基于 GitHub Discussions）
+
+## 联系方式
+
+- **GitHub**：[Weydon-Ding](https://github.com/Weydon-Ding)
+- **Email**：weydon-ding@outlook.com
+
+## 维护说明
+
+- 推送代码后，GitHub Pages 会自动构建网站
+- 文章页面支持评论功能
+- 主页和关于页面使用默认 Jekyll 主题
+- 文章页面使用自定义布局
