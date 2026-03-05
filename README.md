@@ -1,58 +1,63 @@
-# 丁伟东的博客
+[Hux Blog](https://huangxuan.me)
+================================
 
-个人技术博客，用于分享技术思考、学习心得和项目经验。
+> I never expected this to become popular.
 
-## 访问地址
+![](http://huangxuan.me/img/blog-desktop.jpg)
 
-[https://weydon-ding.github.io](https://weydon-ding.github.io)
 
-## 目录结构
+[User Manual 👉](_doc/Manual.md)
+--------------------------------------------------
 
-```
-├── _layouts/         # 布局文件
-│   └── post.html     # 文章页面布局
-├── _posts/           # 文章目录
-├── assets/           # 静态资源
-│   └── css/          # 样式文件
-│       └── style.css # 主样式文件
-├── _config.yml       # 配置文件
-├── index.md          # 主页
-├── about.md          # 关于页面
-├── AGENTS.md         # AI 维护指南
-└── README.md         # 项目说明
+### Getting Started
+
+1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Following [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to fullfill the enviromental requirement.
+
+2. Installed dependencies in the `Gemfile`:
+
+```sh
+$ bundle install 
 ```
 
-## 如何写文章
+3. Serve the website (`localhost:4000` by default):
 
-1. 在 `_posts/` 目录下创建新文件
-2. 文件名格式：`年-月-日-标题.md`（例如：`2024-01-01-hello-world.md`）
-3. 文件头部添加 YAML front matter：
-
-```yaml
----
-layout: post
-title: "文章标题"
-date: 2024-01-01
----
+```sh
+$ bundle exec jekyll serve  # alternatively, npm start
 ```
 
-4. 下方添加 Markdown 格式的文章内容
+### Development (Build From Source)
 
-## 技术栈
+To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
 
-- **平台**：GitHub Pages
-- **框架**：Jekyll
-- **主题**：jekyll-theme-minimal
-- **评论系统**：Giscus（基于 GitHub Discussions）
+Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
 
-## 联系方式
+Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of them are [Liquid](https://github.com/Shopify/liquid/wiki) templates.
 
-- **GitHub**：[Weydon-Ding](https://github.com/Weydon-Ding)
-- **Email**：weydon-ding@outlook.com
+This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
 
-## 维护说明
 
-- 推送代码后，GitHub Pages 会自动构建网站
-- 文章页面支持评论功能
-- 主页和关于页面使用默认 Jekyll 主题
-- 文章页面使用自定义布局
+### Interesting to know more? Checkout the [full user manual](_doc/Manual.md)!
+
+
+Other Resources
+---------------
+
+Ports
+- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
+- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
+
+[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
+- Out of date. Helps wanted for updating it on par with the main repo
+
+Translation
+- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+
+
+License
+-------
+
+Apache License 2.0.
+Copyright (c) 2015-present Huxpro
+
+Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+Copyright (c) 2013-2016 Blackrock Digital LLC.
