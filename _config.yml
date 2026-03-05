@@ -6,4 +6,37 @@ email: weydon-ding@outlook.com
 url: "https://weydon-ding.github.io"
 github_username: Weydon-Ding
 
+# 永久链接
 permalink: /:year/:month/:day/:title/
+
+# 插件
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# 分页
+paginate: 5
+paginate_path: "/page/:num/"
+
+# 社交链接
+social:
+  github: Weydon-Ding
+
+# 默认设置
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      comments: true
+      excerpt_separator: "<!-- more -->"
+
+# 集合
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
