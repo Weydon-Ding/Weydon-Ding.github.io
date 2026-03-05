@@ -3,26 +3,27 @@ layout: default
 title: 丁伟东
 ---
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
 ## 丁伟东
 
-开发者
+游戏引擎研发工程师
 
 ---
-
-### 关于我
-
-游戏引擎研发工程师，专注底层开发与技术探索。
-
-### 技能
-
-- C / C++ / Python
-- Docker / 容器化
-- 游戏引擎 / 底层开发
 
 ### 联系方式
 
 - GitHub: [Weydon-Ding](https://github.com/Weydon-Ding)
 - Email: dingweidong@outlook.com
+- [关于我](about.md)
 
 ---
 
@@ -46,9 +47,12 @@ title: 丁伟东
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="preferred_color_scheme"
+        data-theme="light"
         data-lang="zh-CN"
         data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
+
+</body>
+</html>
