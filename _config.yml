@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: 丁伟东的博客
+description: 一个分享想法的地方
+author: 丁伟东
+email: weydon-ding@outlook.com
+url: "https://weydon-ding.github.io"
+github_username: Weydon-Ding
+
+permalink: /:year/:month/:day/:title/
