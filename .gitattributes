@@ -1,0 +1,67 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.html text
+*.css text
+*.js text
+*.less text
+*.md text
+*.yml text
+*.yaml text
+*.json text
+*.xml text
+*.rb text
+*.py text
+*.sh text
+*.txt text
+
+# Fonts
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+
+# Images
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Archives
+*.zip binary
+*.tar.gz binary
+*.7z binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+
+# Lock files should use CRLF on Windows
+*.lock text eol=crlf
+
+# Shell scripts should use LF
+*.sh text eol=lf
+
+# Ensure consistent line endings for configuration files
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.gitmodules text eol=lf
+
+# Jekyll specific
+_posts/*.md text
+_drafts/*.md text
+_layouts/*.html text
+_includes/*.html text
+
+# Minified files (binary)
+*.min.css binary
+*.min.js binary
+
+# Package files
+package-lock.json text eol=crlf
+Gemfile.lock text eol=crlf

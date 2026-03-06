@@ -9,5 +9,6 @@
   "trashOption": "local",
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "promptDelete": false
 }

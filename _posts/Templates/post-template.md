@@ -2,7 +2,7 @@
 layout: post
 title: "博客文章模板"
 subtitle: "这是一个博客文章模板"
-date: {{date}} {{time}}
+date: {{date}}T{{time}}
 author: "Weydon Ding"
 published: false
 header-style: text
@@ -14,11 +14,10 @@ catalog: true
 lang: zh-CN
 mathjax: false
 multilingual: false
-#navcolor:   "invert"
-#nav-style:  "invert"
-#iframe:     "//huangxuan.me/sw-101-gdgdf/"
+#navcolor: "invert"
+#nav-style: "invert"
+#iframe: "//huangxuan.me/sw-101-gdgdf/"
 tags:
-  - Template
 ---
 
 > 这是一个博客文章模板，用于创建新的博客文章。
