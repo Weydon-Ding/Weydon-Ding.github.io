@@ -1,7 +1,13 @@
 {
-  "livePreview": false,
+  "livePreview": true,
   "showLineNumber": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "_posts",
-  "attachmentFolderPath": "_resources"
+  "newFileFolderPath": "_notes",
+  "attachmentFolderPath": "_notes/_resources",
+  "useMarkdownLinks": true,
+  "deleteUnlinkedAttachments": "always",
+  "trashOption": "local",
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": true
 }
